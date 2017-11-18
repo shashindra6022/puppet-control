@@ -1,0 +1,14 @@
+---
+#profile::base::ntp_servers: 
+# - ponna.1
+# - ponna.2
+profile::apache::apache_vhost_servers: {
+  'shashiudawa2.mylabserver.com': {
+    port: 80,
+    docroot: '/var/www/shashiudawa2',
+  },
+  'shashiudawa2b.mylabserver.com': {
+    port: 80,
+    docroot: '/var/www/shashiudawa2b',
+  }
+}
