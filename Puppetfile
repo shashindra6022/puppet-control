@@ -5,7 +5,7 @@ forge "http://forge.puppetlabs.com"
 mod "puppetlabs/inifile",     '1.5.0'
 mod "puppetlabs/stdlib",      '4.11.0'
 mod "puppetlabs/concat",      '2.1.0'
-mod "puppetlabs/java",        '1.6.0'
+#mod "puppetlabs/java",        '1.6.0'
 mod "puppet-selinux",         '0.8.0'
 mod "garethr-docker",         '5.3.0'
 mod 'puppetlabs-apt',         '2.3.0'
@@ -33,4 +33,12 @@ mod 'role',
 
 mod 'profile',
   :git => 'https://github.com/shashindra6022/puppet-profile.git',
+  :ref => 'master'
+
+mod 'tomcat',
+  :git => 'https://github.com/shashindra6022/puppet-tomcat.git',
+  :ref => 'master'
+
+mod 'java',
+  :git => 'https://github.com/shashindra6022/puppet-java.git',
   :ref => 'master'
