@@ -10,6 +10,8 @@ mod "puppet-selinux",         '0.8.0'
 mod "garethr-docker",         '5.3.0'
 mod 'puppetlabs-apt',         '2.3.0'
 mod 'stahnma-epel',           '1.2.2'
+mod 'puppetlabs-mysql', '3.5.0'
+mod 'nanliu-staging', '1.0.3'
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
 #mod 'apache',
