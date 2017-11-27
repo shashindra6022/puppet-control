@@ -24,6 +24,23 @@ File { backup => false }
 # definition. If there are no other nodes in this file, classes declared here
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
+node 'shashiudawa5.mylabserver.com' {
+  include ::haproxy
+  
+  haproxy::listen { 'paka':
+    collect_exported => false,
+    ipaddress        => '54.190.58.141',
+    ports            => '80',
+  }
+  
+  haproxy::balancermember { 'app1':
+    listening_service => 'paka',
+    server_names      => 'shashiudawa2.mylabserver.com',
+    ipaddresses       => '54.149.153.181',
+    ports             => '8080',
+    options           => 'check',
+  }
+}
 
 node default {
   # This is where you can declare classes for all nodes.
