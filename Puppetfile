@@ -44,3 +44,7 @@ mod 'tomcat',
 mod 'java',
   :git => 'https://github.com/shashindra6022/puppet-java.git',
   :ref => 'master'
+
+mod '',
+  :git => 'https://github.com/shashindra6022/puppet-haproxy.git',
+  :ref => 'master'
