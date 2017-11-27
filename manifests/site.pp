@@ -33,7 +33,7 @@ node 'shashiudawa5.mylabserver.com' {
     ports            => '80',
   }
   
-  haproxy::balancermember { 'app1':
+  haproxy::balancermember { 'shashiudawa2.mylabserver.com':
     listening_service => 'paka',
     server_names      => 'shashiudawa2.mylabserver.com',
     ipaddresses       => '54.149.153.181',
