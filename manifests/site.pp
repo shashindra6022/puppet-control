@@ -43,7 +43,7 @@ node 'shashiudawa5.mylabserver.com' {
 }
 
 node 'shashiudawa2.mylabserver.com' {
-  #class { '::tomcat': }
+  include ::tomcat
 
   ::tomcat::deploy { 'sysfoo':
     deploy_url     => "https://1-112145048-gh.circle-artifacts.com/0/tmp/circle-artifacts.dh5LqCi/sysfoo.war",
