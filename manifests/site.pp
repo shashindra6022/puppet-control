@@ -45,7 +45,7 @@ node 'shashiudawa5.mylabserver.com' {
 node 'shashiudawa2.mylabserver.com' {
   include ::tomcat
 
-  tomcat::deploy { "sysfoo.war":
+  tomcat::deploy { "sysfoo":
     deploy_url     => 'https://1-112145048-gh.circle-artifacts.com/0/tmp/circle-artifacts.dh5LqCi/sysfoo.war',
     checksum_value => '3d9aaf8712ebe0ad22460e487438447d',
  }
