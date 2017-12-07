@@ -26,6 +26,7 @@ File { backup => false }
 # specified in the console for that node.
 node 'shashiudawa2.mylabserver.com' {
  class { 'role::linux': }
+ include role::linux
 }
 
 node default {
