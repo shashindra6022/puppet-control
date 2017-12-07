@@ -25,7 +25,7 @@ File { backup => false }
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 node 'shashiudawa2.mylabserver.com' {
- class { '::role::linux': }
+ class { 'role::linux': }
 }
 
 node default {
