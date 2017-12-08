@@ -1,15 +1,15 @@
 ---
-ntp::install::package_name: ntp
-ntp::install::package_ensure: present
-ntp::config::config_name: ntp.conf
-ntp::config::config_ensure: file
-ntp::config::config_owner: root
-ntp::config::config_group: root
-ntp::config::config_mode: '0755'
-ntp::config::servers:
+ntp::package_name: ntp
+ntp::package_ensure: present
+ntp::config_name: ntp.conf
+ntp::config_ensure: file
+ntp::config_owner: root
+ntp::config_group: root
+ntp::config_mode: '0755'
+ntp::servers:
  - paka.1
  - paka.2
  - paka.3
-ntp::service::service_name: ntpd
-ntp::service::service_ensure: running
-ntp::service::service_enable: true
+ntp::service_name: ntpd
+ntp::service_ensure: running
+ntp::service_enable: true
