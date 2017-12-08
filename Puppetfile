@@ -26,9 +26,9 @@ mod 'ssh',
   :git => 'https://github.com/shashindra6022/puppet-ssh',
   :ref => 'master'
 
-#mod 'ntp',
-#  :git => 'https://github.com/shashindra6022/puppet-ntp.git',
-#  :ref => 'master'
+mod 'ntp',
+  :git => 'https://github.com/shashindra6022/ntp.git',
+  :ref => 'master'
 
 mod 'role',
   :git => 'https://github.com/shashindra6022/puppet-role.git',
