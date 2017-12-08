@@ -5,7 +5,7 @@ ntp::config::config_name: ntp.conf
 ntp::config::config_ensure: file
 ntp::config::config_owner: root
 ntp::config::config_group: root
-ntp::config::config_mode: 0755
+ntp::config::config_mode: '0755'
 ntp::config::servers:
  - paka.1
  - paka.2
